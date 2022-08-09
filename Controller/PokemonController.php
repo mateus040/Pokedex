@@ -31,6 +31,7 @@ class PokemonController
         $pokemon->altura = $_POST['altura'];
         $pokemon->peso = $_POST['peso'];
         $pokemon->habilidades = $_POST['habilidades'];
+        $pokemon->id_categoria = $_POST['id_categoria'];
 
         $pokemon->save();
 

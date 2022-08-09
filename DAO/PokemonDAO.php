@@ -21,6 +21,8 @@ class PokemonDAO
         $stmt->bindValue(3, $model->peso);
         $stmt->bindValue(4, $model->habilidades);
         $stmt->execute();
+
+       // mysqli_query($conexao, $sql);
     }
 
     public function update(PokemonModel $model)
@@ -28,11 +30,12 @@ class PokemonDAO
         $sql = "UPDATE pokemon SET nome=?, altura=?, peso=?, habilidades=? WHERE id=?";
 
         $stmt = $this->conexao->prepare($sql);
-        $stmt->bindValue(1, $model->nome);
-        $stmt->bindValue(2, $model->altura);
-        $stmt->bindValue(3, $model->peso);
-        $stmt->bindValue(4, $model->habilidades);
-        $stmt->bindValue(5, $model->id);
+        $stmt->bindValue(1, $model->id_categoria);
+        $stmt->bindValue(2, $model->nome);
+        $stmt->bindValue(3, $model->altura);
+        $stmt->bindValue(4, $model->peso);
+        $stmt->bindValue(5, $model->habilidades);
+        $stmt->bindValue(6, $model->id);
         $stmt->execute();
     }
 

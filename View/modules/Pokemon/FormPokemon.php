@@ -32,6 +32,16 @@
             <label for="habilidades">Habilidades:</label>
             <input id="habilidades" name="habilidades" value="<?= $model->habilidades ?>" type="text" />
 
+            <label for="id_categoria">Categoria:</label>
+            <select name="id_categoria">
+                <?php
+                    while($linha = mysqli_fetch_array($consulta_categoria))
+                    {
+                        echo '<option value="' .$linha['id_categoria']. '">'.$linha['descricao'].'</option>';
+                    }
+                ?>
+            </select>
+
             <button type="submit">Enviar</button>
 
         </fieldset>
