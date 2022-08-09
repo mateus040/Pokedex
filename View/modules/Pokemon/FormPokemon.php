@@ -29,7 +29,7 @@
             <label for="peso">Peso:</label>
             <input id="peso" name="peso" value="<?= $model->peso ?>" type="number" />
 
-            <label for="habilidades">Habilidade:</label>
+            <label for="habilidades">Habilidades:</label>
             <input id="habilidades" name="habilidades" value="<?= $model->habilidades ?>" type="text" />
 
             <button type="submit">Enviar</button>
