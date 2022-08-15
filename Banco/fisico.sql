@@ -1,18 +1,14 @@
-create database pokedex;
+create schema pokedex;
 
 use pokedex;
 
 create table pokemon (
 	id int auto_increment not null,
     nome varchar(250) not null,
-    altura double not null,
-    peso double not null,
-    habilidades varchar(250) not null,
-    foto varchar(500) not null,
-	primary key (id)
+    descricao varchar(250) not null,
+    tipo varchar(250) not null,
+    imagem varchar(250) not null,
+    primary key(id)
 );
-
-
-
-
+    
     
