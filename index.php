@@ -22,8 +22,6 @@ switch($uri_parse)
         PokemonController::delete();
     break;
 
-  
-    
     default:
         echo "erro 404";
     break;
