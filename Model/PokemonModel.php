@@ -10,7 +10,7 @@ class PokemonModel
     {
         include 'DAO/PokemonDAO.php';
 
-        $dao = new pokemonDAO();
+        $dao = new PokemonDAO();
 
         if(empty($this->id))
         {
