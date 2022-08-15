@@ -10,16 +10,17 @@
 
     <table>
         <tr>
-            <th></th>
             <th>ID</th>
             <th>Nome</th>
             <th>Altura</th>
             <th>Peso</th>
             <th>Habilidades</th>
+            <th>Foto</th>
         </tr>
 
         <?php foreach($model->rows as $item): ?>
             <tr>
+
                 <td>
                     <a href="/pokemon/delete?id=<?= $item->id ?>">X</a>
                 </td>
@@ -32,6 +33,7 @@
                 <td><?= $item->altura ?></td>
                 <td><?= $item->peso ?></td>
                 <td><?= $item->habilidades ?></td>
+                <td><?= $item->foto ?></td>
             </tr>
         <?php endforeach ?>
 

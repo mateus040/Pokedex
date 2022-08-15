@@ -12,7 +12,7 @@ class PokemonDAO
 
     function insert(PokemonModel $model)
     {
-        $sql = "INSERT INTO pokemon (nome, altura, peso, habilidades) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO pokemon (nome, altura, peso, habilidades, foto) VALUES (?, ?, ?, ?, ?)";
 
         $stmt = $this->conexao->prepare($sql);
 
@@ -20,6 +20,7 @@ class PokemonDAO
         $stmt->bindValue(2, $model->altura);
         $stmt->bindValue(3, $model->peso);
         $stmt->bindValue(4, $model->habilidades);
+        $stmt->bindValue(5, $model->foto);
         $stmt->execute();
 
        // mysqli_query($conexao, $sql);
@@ -27,14 +28,14 @@ class PokemonDAO
 
     public function update(PokemonModel $model)
     {
-        $sql = "UPDATE pokemon SET nome=?, altura=?, peso=?, habilidades=? WHERE id=?";
+        $sql = "UPDATE pokemon SET nome=?, altura=?, peso=?, habilidades=?, foto=? WHERE id=?";
 
         $stmt = $this->conexao->prepare($sql);
-        $stmt->bindValue(1, $model->id_categoria);
-        $stmt->bindValue(2, $model->nome);
-        $stmt->bindValue(3, $model->altura);
-        $stmt->bindValue(4, $model->peso);
-        $stmt->bindValue(5, $model->habilidades);
+        $stmt->bindValue(1, $model->nome);
+        $stmt->bindValue(2, $model->altura);
+        $stmt->bindValue(3, $model->peso);
+        $stmt->bindValue(4, $model->habilidades);
+        $stmt->bindValue(5, $model->foto);
         $stmt->bindValue(6, $model->id);
         $stmt->execute();
     }

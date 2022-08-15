@@ -3,7 +3,6 @@
 $uri_parse = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 include 'Controller/PokemonController.php';
-include 'Controller/CategoriaController.php';
 
 switch($uri_parse)
 {
@@ -23,26 +22,7 @@ switch($uri_parse)
         PokemonController::delete();
     break;
 
-
-
-    case '/categoria':
-        CategoriaController::index();
-    break;
-
-    case '/categoria/form':
-        CategoriaController::form();
-    break;
-
-    case '/categoria/save':
-        CategoriaController::save();
-    break;
-
-    case 'categoria/delete':
-        CategoriaController::delete();
-    break;
-
-
-
+  
     
     default:
         echo "erro 404";

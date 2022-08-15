@@ -8,7 +8,7 @@ class PokemonController
 
         $model = new PokemonModel();
         $model->getAllRows();
-        include 'View/modules/Pokemon/FormPokemon.php';
+        include 'View/modules/Pokemon/ListarPokemon.php';
     }
 
     public static function form()
@@ -31,7 +31,7 @@ class PokemonController
         $pokemon->altura = $_POST['altura'];
         $pokemon->peso = $_POST['peso'];
         $pokemon->habilidades = $_POST['habilidades'];
-        $pokemon->id_categoria = $_POST['id_categoria'];
+        $pokemon->foto = $_POST['foto'];
 
         $pokemon->save();
 
