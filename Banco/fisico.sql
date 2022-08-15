@@ -7,7 +7,7 @@ create table pokemon (
     nome varchar(250) not null,
     descricao varchar(250) not null,
     tipo varchar(250) not null,
-    imagem varchar(250) not null,
+    imagem varchar(500) not null,
     primary key(id)
 );
     
