@@ -1,10 +1,11 @@
-<?php
+<?php 
+
 
 class PokemonModel
 {
-    public $id, $nome, $altura, $peso, $habilidades, $foto;
+    public $id, $nome, $descricao, $tipo, $imagem;
 
-    public $rows;   
+    public $rows;
 
     public function save()
     {
@@ -12,32 +13,33 @@ class PokemonModel
 
         $dao = new PokemonDAO();
 
-        if(empty($this->id))
+        if(empty($this->id)) 
         {
             $dao->insert($this);
-        }
-        else{
+        } else {
             $dao->update($this);
         }
-        
     }
 
     public function getAllRows()
     {
         include 'DAO/PokemonDAO.php';
+
         $dao = new PokemonDAO();
+
         $this->rows = $dao->select();
     }
 
     public function getById(int $id)
     {
         include 'DAO/PokemonDAO.php';
-
-        $dao = new PokemonDAO();
+        
+        $dao = new PokemonDAO;
 
         $obj = $dao->selectById($id);
 
-        return ($obj) ? $obj : new PokemonModel();
+        return ($obj) ? $obj : new PokemonModel(); 
+
     }
 
     public function delete(int $id)

@@ -4,40 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Pokemon</title>
-
+    <title>Cadastro de Pokemons</title>
     <style>
         label, input { display: block;}
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     </style>
-
 </head>
 <body>
 
     <form action="/pokemon/save" method="post">
 
         <fieldset>
-            <legend> Cadastro de Pokemon </legend>
 
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
-            <label for="nome">Nome:</label>
-            <input id="nome" name="nome" value="<?= $model->nome ?>" type="text" />
+            <label for="nome">Nome do Pokemon:</label>
+            <input name="nome" id="nome" type="text" value="<?= $model->nome?>" />
 
-            <label for="altura">Altura:</label>
-            <input id="altura" name="altura" value="<?= $model->altura ?>" type="number" />
+            <label for="descricao">Descrição:</label>
+            <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>"> </textarea> 
 
-            <label for="peso">Peso:</label>
-            <input id="peso" name="peso" value="<?= $model->peso ?>" type="number" />
+            <label for="tipo">Tipo:</label>
+            <input name="tipo" id="tipo" type="text" value="<?= $model->tipo ?>" />
 
-            <label for="habilidades">Habilidades:</label>
-            <input id="habilidades" name="habilidades" value="<?= $model->habilidades ?>" type="text" />
-
-            <label for="foto">Foto:</label>
-            <input id="foto" name="foto" value="<?= $model->foto ?>" type="url" />
+            <label for="imagem">Link da Imagem:</label>
+            <input name="imagem" id="imagem" type="url" value="<?= $model->imagem ?>" />
 
             <br>
 
-            <button type="submit">Enviar</button>
+            <button type="submit">Cadastrar</button>
 
         </fieldset>
 
