@@ -31,7 +31,7 @@
             <input name="tipo" id="tipo" type="text" value="<?= $model->tipo ?>" />
 
             <label for="imagem">Link da Imagem:</label>
-            <input name="imagem" id="imagem" type="url" value="<?= $model->imagem ?>" />
+            <input name="imagem" id="imagem" type="file" value="<?= $model->imagem ?>" />
 
             <br>
 
