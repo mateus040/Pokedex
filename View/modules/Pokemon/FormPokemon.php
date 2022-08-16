@@ -17,8 +17,7 @@
 
     <form action="/pokemon/save" method="post">
 
-        <fieldset>
-
+        <div class="container">
             <input type="hidden" value="<?= $model->id ?>" name="id" />
 
             <label for="nome">Nome do Pokemon:</label>
@@ -31,13 +30,12 @@
             <input name="tipo" id="tipo" type="text" value="<?= $model->tipo ?>" />
 
             <label for="imagem">Link da Imagem:</label>
-            <input name="imagem" id="imagem" type="file" value="<?= $model->imagem ?>" />
+            <input name="imagem" id="imagem" type="url" value="<?= $model->imagem ?>" />
 
             <br>
 
             <button type="submit">Cadastrar</button>
-
-        </fieldset>
+        </div>
 
     </form>
     

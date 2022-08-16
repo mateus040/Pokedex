@@ -11,8 +11,8 @@
 <body>
 
     <?php foreach($model->rows as $item): ?>
-            <div class="card" style="width: 248px; margin:7px; font-size: 16px; display:inline-flex;max-width: 300px; border: solid;">
-                <img src="<?= $item['imagem'] ?>" class="card-img-top">
+            <div class="card">
+                <img class="card-img-top" src="<?= $item['imagem'] ?>">
                 <div class="card-body">
                     <h5 class="card-title"><?= $item['nome'] ?></h5>
                     <ul class="list-group list-group-flush">
@@ -20,11 +20,11 @@
                     </ul>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item" style="color:#212121">Tipo: <?= $item['tipo'] ?></li>
+                    <li class="list-group-item">Tipo: <?= $item['tipo'] ?></li>
                 </ul>
                 <div class="card-body">
-                <a href="/pokemon/form?id=<?= $item['id'] ?>" class="card-link" style="color:darkcyan;text-decoration:none;">Editar Pokemon</a></b>
-                    <a href="/pokemon/delete?id=<?= $item['id'] ?>" class="card-link" style="color:darkcyan;text-decoration:none;">Deletar</a>
+                <a href="/pokemon/form?id=<?= $item['id'] ?>" class="card-link">Editar Pokemon</a></b>
+                    <a href="/pokemon/delete?id=<?= $item['id'] ?>" class="card-link">Deletar</a>
                 </div>
             </div>
             <td>
