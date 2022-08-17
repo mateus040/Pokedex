@@ -6,6 +6,10 @@ include 'Controller/PokemonController.php';
 
 switch($uri_parse)
 {
+    case '/home':
+        include 'View/modules/Pagina_Inicial/home.php';
+    break;
+
     case '/pokemon':
         PokemonController::index();
     break;
@@ -23,6 +27,6 @@ switch($uri_parse)
     break;
 
     default:
-        echo "erro 404";
+        header("Location: /home");
     break;
 }
