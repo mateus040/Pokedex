@@ -17,25 +17,32 @@
 
     <form action="/pokemon/save" method="post">
 
+    <br> <br> <br> <br> <br> <br> 
+
+    <center>
         <div class="container">
-            <input type="hidden" value="<?= $model->id ?>" name="id" />
 
-            <label for="nome">Nome do Pokemon:</label>
-            <input name="nome" id="nome" type="text" value="<?= $model->nome?>" />
+            <h2> Cadastro de Pokemon </h2>
 
-            <label for="descricao">Descrição:</label>
-            <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>"> </textarea> 
+            <input type="hidden" value="<?= $model->id ?>" name="id" /> <br>
 
-            <label for="tipo">Tipo:</label>
-            <input name="tipo" id="tipo" type="text" value="<?= $model->tipo ?>" />
+            <label for="nome"><b>Nome do Pokemon:</b></label>
+            <input name="nome" id="nome" type="text" value="<?= $model->nome?>" /> <br>
 
-            <label for="imagem">Link da Imagem:</label>
+            <label for="descricao"><b>Descrição:</b></label>
+            <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>"> <br>
+
+            <label for="tipo"><b>Tipo:</b></label>
+            <input name="tipo" id="tipo" type="text" value="<?= $model->tipo ?>" /> <br>
+
+            <label for="imagem"><b>Link da Imagem:</b></label>
             <input name="imagem" id="imagem" type="url" value="<?= $model->imagem ?>" />
 
             <br>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit"><b>Cadastrar</b></button>
         </div>
+    </center>
 
     </form>
     
