@@ -22,7 +22,7 @@
     <center>
         <div class="container">
 
-            <h2> Cadastro de Pokemon </h2>
+            <h2> Cadastro de Pokémon </h2>
 
             <input type="hidden" value="<?= $model->id ?>" name="id" /> <br>
 
