@@ -1,5 +1,6 @@
 body{ 
     background: linear-gradient(to right , rgb(30,144,255), rgb(0, 128 ,128));
+    background-size: cover;
 }
 
 .card{
