@@ -1,6 +1,29 @@
 body{ 
-    background: linear-gradient(to right , rgb(30,144,255), rgb(0, 128 ,128));
+    background-image: url(/../../img/branco.jpg);
     background-size: cover;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: red;
+    z-index: 9;
+}
+
+nav a{
+    color: #fff;
+    margin: auto 20px auto 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    font-size: 20px;
+    color: white;
 }
 
 .card{
