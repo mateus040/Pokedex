@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Pokemons</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="/../../css/Form.css">
     <link rel="shortcut icon" href="/../../img/favicon.png" type="image/x-icon">
     <style>
@@ -18,7 +19,22 @@
 
     <form action="/pokemon/save" method="post">
 
-    <br> <br> <br> <br> <br> <br> <br>
+    <nav>
+
+        <img src="/../../img/logo.png">
+
+        <ul>
+            <br>
+            <li> <a href="/home">Home</a></li>
+            <li> <a href="/pokemon/form">Cadastrar Pokémon</a></li>
+            <li> <a href="/pokemon">Listagem de Pokémon</a></li>
+
+
+        </ul>
+
+    </nav>
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
     <center>
         <div class="container">
