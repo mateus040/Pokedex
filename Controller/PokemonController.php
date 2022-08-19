@@ -21,6 +21,8 @@ class PokemonController
 
         if(isset($_GET['id']))
             $model = $model->getById( (int) $_GET['id']);
+
+        $model->lista_categoria = $model->getAllCategoria();
             
         include 'View/modules/Pokemon/FormPokemon.php';
     }
@@ -35,7 +37,7 @@ class PokemonController
         $model->nome = $_POST['nome'];
         $model->descricao = $_POST['descricao'];
         $model->imagem = $_POST['imagem'];
-        
+        $model->id_categoria = $_POST['categoria'];
         
         $model->save(); 
 
