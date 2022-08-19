@@ -25,7 +25,7 @@ class PokemonModel
 
     public function getAllCategoria()
     {
-        include 'DAO/PokemonDAO.php';
+        include 'DAO/CategoriaDAO.php';
 
         $dao = new CategoriaDAO();
 
