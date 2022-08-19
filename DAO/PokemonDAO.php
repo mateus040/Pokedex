@@ -5,13 +5,11 @@ class PokemonDAO
 {
     private $conexao;
 
-    function __construct() 
+    public function __construct()
     {
-        $dsn = "mysql:host=localhost:3307;dbname=pokedex";
-        $user = "root";
-        $pass = "etecjau";
-        
-        $this->conexao = new PDO($dsn, $user, $pass);
+        include_once 'MySQL.php';
+
+        $this->conexao = new MySQL();
     }
 
     function insert(PokemonModel $model) 

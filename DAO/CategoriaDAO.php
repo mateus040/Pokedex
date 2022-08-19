@@ -36,16 +36,16 @@ class CategoriaDAO
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();
+
+        return $stmt->fetchAll();
     }
 
     public function selectById(int $id)
     {
-        include_once 'Model/CategoriaModel.php';
-
         $sql = 'SELECT * FROM categoria WHERE id=?';
 
         $stmt = $this->conexao->prepare($sql);
-        $stmt->bindValue(1, $model->id);
+        $stmt->bindValue(1, $id);
         $stmt->execute();
 
         return $stmt->fetchObject("CategoriaModel");
@@ -53,7 +53,7 @@ class CategoriaDAO
 
     public function delete(int $id)
     {
-        $sql = 'DELETE * FROM categoria WHERE id=?';
+        $sql = 'DELETE FROM categoria WHERE id=?';
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $id);
