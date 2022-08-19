@@ -15,8 +15,8 @@ class PokemonDAO
     function insert(PokemonModel $model) 
     { 
         $sql = "INSERT INTO pokemon
-                (nome, descricao, imagem) 
-                VALUES (?, ?, ?)";
+                (nome, descricao, imagem, id_categoria) 
+                VALUES (?, ?, ?, ?)";
         
 
         $stmt = $this->conexao->prepare($sql);
@@ -24,13 +24,17 @@ class PokemonDAO
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->descricao);
         $stmt->bindValue(3, $model->imagem);
+        $stmt->bindValue(4, $model->id_categoria);
+
         
         $stmt->execute();      
     }
 
     public function select()
     {
-        $sql = "SELECT * FROM pokemon ";
+        $sql = "SELECT p.id, p.nome, p.descricao, c.descricao AS categoria, p.imagem
+                FROM pokemon p
+                JOIN categoria c ON (c.id = p.id_categoria)";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->execute();
@@ -40,13 +44,14 @@ class PokemonDAO
 
     public function update(PokemonModel $model)
     {
-        $sql = "UPDATE pokemon SET nome=?, descricao=?, imagem=? WHERE id=? ";
+        $sql = "UPDATE pokemon SET nome=?, descricao=?, imagem=?, id_categoria=? WHERE id=? ";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $model->nome);
         $stmt->bindValue(2, $model->descricao);
         $stmt->bindValue(3, $model->imagem);
-        $stmt->bindValue(4, $model->id);
+        $stmt->bindValue(4, $model->id_categoria);
+        $stmt->bindValue(5, $model->id);
 
 
         $stmt->execute();
@@ -54,7 +59,10 @@ class PokemonDAO
 
     public function selectById(int $id)
     {
-        $sql = "SELECT * FROM pokemon WHERE id = ?";
+        $sql = "SELECT p.id, p.nome, p.descricao, c.descricao AS categoria, p.imagem
+                FROM pokemon p
+                JOIN categoria c ON (c.id = p.id_categoria)
+                WHERE p.id=?";
 
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $id);
