@@ -45,7 +45,7 @@
             <select name="categoria">
                 <?php foreach($model->lista_categoria as $categoria):?>
                     <option value="<?= $categoria['id']?>" <?= ($categoria['id'] == $model->id_categoria) ? 'selected' : " " ?> >
-                        <?= $posicao['nome'] ?>
+                        <?= $categoria['descricao'] ?>
                     </option>
                 <?php endforeach ?>
             </select>

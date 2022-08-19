@@ -24,6 +24,7 @@
                     <h5 class="card-title"><?= $item['nome'] ?></h5>
                     <ul class="list-group list-group-flush">
                         <p class="card-text"><?= $item['descricao'] ?></p>
+                        <p class="card-text"><?= $item['categoria'] ?></p>
                     </ul>
                 </div>
                 <div class="card-body">
