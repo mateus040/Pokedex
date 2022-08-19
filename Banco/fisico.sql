@@ -8,6 +8,7 @@ create table categoria (
     primary key(id)
 );
 
+
 create table pokemon (
 	id int auto_increment not null,
     nome varchar(250) not null,
