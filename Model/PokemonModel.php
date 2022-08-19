@@ -3,7 +3,9 @@
 
 class PokemonModel
 {
-    public $id, $nome, $descricao, $imagem;
+    public $id, $nome, $descricao, $imagem, $id_categoria;
+
+    public $lista_categoria;
 
     public $rows;
 
@@ -19,6 +21,15 @@ class PokemonModel
         } else {
             $dao->update($this);
         }
+    }
+
+    public function getAllCategoria()
+    {
+        include 'DAO/PokemonDAO.php';
+
+        $dao = new CategoriaDAO();
+
+        return $dao->select();
     }
 
     public function getAllRows()
