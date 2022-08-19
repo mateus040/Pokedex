@@ -5,30 +5,6 @@ body{
     margin: 0;
 }
 
-nav{
-    width: 100%;
-    display: flex;
-    position: fixed;
-    background-color: red;
-    z-index: 9;
-}
-
-nav a{
-    color: #fff;
-    margin: auto 20px auto 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav li{
-    float: left;
-    list-style: none;
-    margin-left: 10px;
-    font-size: 20px;
-    color: white;
-}
-
-
 .container{
     background: gray;
     max-width: 500px;
@@ -83,9 +59,6 @@ label{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.nav-extended{
-    background-color: red;
-}
 
 
 
