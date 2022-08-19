@@ -41,6 +41,15 @@
             <label for="imagem"><b>Link da Imagem:</b></label>
             <input name="imagem" id="imagem" type="url" value="<?= $model->imagem ?>" />
 
+            <label for="categoria">Categoria:</label>
+            <select name="categoria">
+                <?php foreach($model->lista_categoria as $categoria):?>
+                    <option value="<?= $categoria['id']?>" <?= ($categoria['id'] == $model->id_categoria) ? 'selected' : " " ?> >
+                        <?= $posicao['nome'] ?>
+                    </option>
+                <?php endforeach ?>
+            </select>
+
             <br>
 
             <button type="submit"><b>Cadastrar</b></button>
