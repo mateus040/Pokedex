@@ -34,7 +34,6 @@ class PokemonController
         $model->id = $_POST['id'];
         $model->nome = $_POST['nome'];
         $model->descricao = $_POST['descricao'];
-        $model->tipo = $_POST['tipo'];
         $model->imagem = $_POST['imagem'];
         
         

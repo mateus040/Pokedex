@@ -3,7 +3,7 @@
 
 class PokemonModel
 {
-    public $id, $nome, $descricao, $tipo, $imagem;
+    public $id, $nome, $descricao, $imagem;
 
     public $rows;
 

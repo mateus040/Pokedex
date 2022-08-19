@@ -37,9 +37,6 @@
                         <p class="card-text"><?= $item['descricao'] ?></p>
                     </ul>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Tipo: <?= $item['tipo'] ?></li>
-                </ul>
                 <div class="card-body">
                 <a href="/pokemon/form?id=<?= $item['id'] ?>" class="card-link">Editar Pokemon</a></b>
                     <a href="/pokemon/delete?id=<?= $item['id'] ?>" class="card-link">Deletar</a>
