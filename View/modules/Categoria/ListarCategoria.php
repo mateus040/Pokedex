@@ -18,37 +18,52 @@
         <?php include 'View/includes/cabecalho.php' ?>
     </header>
 
-    <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-    <table>
-        <tr>
-            <th> </th>
-            <th>ID</th>
-            <th>Descricao</th>  
-        </tr>
-
-        <?php foreach($model->rows as $item): ?>
+    <center>
+    <table class="table table-striped">
+        <thead>
             <tr>
-                <td>
-                    <a href="/categoria/delete?id=<?= $item['id'] ?>"> X </a>
-                </td>
-
-                <td>
-                    <?= $item['id'] ?> 
-                </td>
-
-                <td>
-                    <a href="/categoria/form?id=<?= $item['id'] ?>"><?= $item['descricao'] ?></a>
-                </td>
-
+                <th>ID</th>
+                <th>Descricao</th>
+                <th>Deletar</th>
+                <th>Alterar</th>
             </tr>
-        <?php endforeach ?>
+        </thead>
+
+        <tbody>
+            <?php foreach($model->rows as $item): ?>
+                <tr>
+
+                    <th scope="row">
+                        <?= $item['id'] ?> 
+                    </th>
+
+                    <th scope="row">
+                        <?= $item['descricao'] ?>
+                    </th>
+
+                    <td>
+                        <a href="/categoria/form?id=<?= $item['id'] ?>">Y</a>
+                    </td>
+
+                    
+                    <td>
+                        <a href="/categoria/delete?id=<?= $item['id'] ?>"> X </a>
+                    </td>
+
+                </tr>
+            <?php endforeach ?>
+        </tbody>
 
         <?php if(count($model->rows) == 0): ?>
             <tr>
                 <td colspan="5"> Nenhum registro encontrado. </td>
             </tr>
         <?php endif ?>
-    </table>    
+    </table>   
+    </center> 
 </body>
 </html>
+
+
