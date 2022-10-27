@@ -2,3 +2,38 @@ body{
     background-image: url(/../img/branco.jpg);
     background-size: cover; 
 }
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('/../font/Pokemon_Solid.ttf') format('opentype'), url('font/Pokemon_Solid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section{
+    padding: 13rem 7%;
+}
+
+.container{
+    text-align: center;
+}
+
+.container h1{
+    font-family: 'Pokemon';
+    color: #fecc04;
+    font-size: 100px;
+    text-shadow: -1px 10px 2px #2e65c4;
+}
+
+.expotec{
+    text-align: center;
+}
+
+.expotec h3{
+    font-family: 'Pokemon';
+    color: #fecc04;
+    font-size: 50px;
+    text-shadow: -1px 6px 2px #2e65c4;
+}
+
+

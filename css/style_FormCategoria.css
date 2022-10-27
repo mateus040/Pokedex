@@ -5,6 +5,13 @@ body{
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Font';
+    src: url('/../font/KOMIKAX_.ttf') format('opentype'), url('font/KOMIKAX_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container{
     background: gray;
     max-width: 500px;
@@ -39,14 +46,8 @@ button/*[type="submit"]*/{
     border-radius: 6px;
     transition: all 0.3s ease;
     border-width: 4px;
+    border-color: black;
     
-}
-
-@font-face {
-    font-family: 'Font';
-    src: url('/../font/KOMIKAX_.ttf') format('opentype'), url('font/KOMIKAX_.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 h2{
