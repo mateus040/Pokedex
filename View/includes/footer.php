@@ -11,5 +11,5 @@
             <a href="https://www.linkedin.com/in/mateus-gabriel-moreno-585344240/" class="fab fa-linkedin"></a>
         </div>
         
-        <div class="credit">TechPower© @2022 // Todos os direitos reservados. Criado por <span>Mateus Gabriel Moreno.</span></div>
+        <div class="credit">Pokedex© @2022 // Todos os direitos reservados. Criado por <span>Mateus Gabriel Moreno.</span></div>
     </div>
