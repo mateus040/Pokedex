@@ -26,8 +26,8 @@
             <tr>
                 <th>ID</th>
                 <th>Descricao</th>
-                <th>Deletar</th>
                 <th>Alterar</th>
+                <th>Deletar</th>
             </tr>
         </thead>
 
@@ -58,11 +58,16 @@
 
         <?php if(count($model->rows) == 0): ?>
             <tr>
+                <br>
                 <td colspan="5"> Nenhum registro encontrado. </td>
             </tr>
         <?php endif ?>
     </table>   
     </center> 
+
+    <br> <br> <br> <br> <br>
+
+    <?php include 'View/includes/footer.php' ?>
 </body>
 </html>
 

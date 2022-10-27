@@ -39,7 +39,7 @@
             <input name="descricao" id="descricao" type="text" value="<?= $model->descricao ?>"> <br>
 
             <label for="imagem"><b>Link da Imagem:</b></label>
-            <input name="imagem" id="imagem" type="url" value="<?= $model->imagem ?>" />
+            <input name="imagem" id="imagem" type="url" placeholder=" Pasta Links (Pasta Raiz)" value="<?= $model->imagem ?>" />
 
             <label for="categoria">Categoria:</label>
             <select name="categoria">
@@ -58,7 +58,9 @@
 
     </form>
 
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <br> <br> <br> <br> <br> 
+
+    <?php include 'View/includes/footer.php' ?>
     
 </body>
 </html>

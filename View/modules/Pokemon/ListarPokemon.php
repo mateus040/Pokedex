@@ -15,7 +15,7 @@
         <?php include 'View/includes/cabecalho.php' ?>
     </header>
 
-    <br> <br> <br> <br> <br> 
+    <br> <br> <br> <br> <br> <br> <br> <br>
 
     <?php foreach($model->rows as $item): ?>
             <div class="card">
@@ -38,9 +38,14 @@
 
     <?php if(count($model->rows) == 0): ?>
         <tr>
+            <br>
             <td colspan="5"> <b>Nenhum registro encontrado.</b></td>
         </tr>
     <?php endif ?>
+    
+    <br> <br> <br> <br> <br> <br> <br>
+
+    <?php include 'View/includes/footer.php' ?>
 
 </body>
 </html>

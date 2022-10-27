@@ -26,7 +26,6 @@ class PokemonDAO
         $stmt->bindValue(3, $model->imagem);
         $stmt->bindValue(4, $model->id_categoria);
 
-        
         $stmt->execute();      
     }
 
