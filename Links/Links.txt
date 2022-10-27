@@ -1,0 +1,14 @@
+-- LISTA DE ALGUNS POKEMONS PARA TESTE --
+
+https://sm.ign.com/ign_br/screenshot/default/025pikachu-os-anime-4_3pym.png -- Pikachu
+https://img.pokemondb.net/artwork/large/snom.jpg -- Snom
+https://images.uncyc.org/pt/5/5f/Pokesafari019_Blaziken.png -- Blasiken
+https://img.pokemondb.net/artwork/large/sceptile-mega.jpg -- Sceptile
+https://3.bp.blogspot.com/-U7w2XFio_Ag/UxOYV4ngreI/AAAAAAAAAMQ/P1V-4HPC6F0/s1600/1957445_272825202876726_517733635_n.jpg -- Hydreigon
+https://assets.pokemon.com/assets/cms2/img/pokedex/full/745.png -- Lycanroc
+https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png -- Eevee
+https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png -- Charmander
+https://img.pokemondb.net/artwork/large/gengar.jpg -- Gengar
+https://assets.pokemon.com/assets/cms2/img/pokedex/full/384_f2.png -- Rayquaza
+https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png -- Charizard
+https://assets.pokemon.com/assets/cms2/img/pokedex/full/658.png -- Greninja
